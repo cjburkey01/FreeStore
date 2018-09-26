@@ -1,0 +1,16 @@
+[
+{
+  "modid": "yaass",
+  "name": "YAASS - Yet Another Advanced Storage System",
+  "description": "Another attempt at a storage system/manager for Forge!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CJ Burkey"],
+  "credits": "The Forge and FML guys, for making Forge.",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
