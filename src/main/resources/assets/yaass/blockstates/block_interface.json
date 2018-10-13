@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "yaass:block_interface"
+    }
+  }
+}

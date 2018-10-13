@@ -5,7 +5,6 @@ import com.cjburkey.yaass.item.ModItems;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import java.util.Objects;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,10 +13,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = ModInfo.MODID)
 public final class ModBlocks {
     
-    
+    public static Block blockCable;
+    public static Block blockInterface;
     
     private static void registerBlocks() {
-        
+        blockCable = registerBlock(new BlockCable(), "block_cable");
+        blockInterface = registerBlock(new BlockInterface(), "block_interface");
     }
     
     private ModBlocks() {

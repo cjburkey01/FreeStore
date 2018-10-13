@@ -7,11 +7,15 @@ import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(modid = ModInfo.MODID, name = ModInfo.NAME, version = ModInfo.VERSION, acceptedMinecraftVersions = "[" + ModInfo.MC_VERSION + "]")
 public final class YAASS {
     
     private static final String proxyS = "com.cjburkey.yaass.proxy.";
+    
+    public static final Logger logger = LogManager.getLogger(ModInfo.MODID);
     
     @Mod.Instance(owner = ModInfo.MODID)
     public static YAASS instance;
