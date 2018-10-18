@@ -1,13 +1,6 @@
 {
-  "forge_marker": 1,
   "defaults": {
-    "textures": {
-      "0": "yaass:blocks/block_cable"
-    },
     "uvlock": true
-  },
-  "variants": {
-    "normal": [{}]
   },
   "multipart": [
     {
@@ -48,20 +41,20 @@
     
     {
       "when": { "up": true },
-      "apply": { "model": "yaass:block_cable_connected_side", "x": 90 }
+      "apply": { "model": "yaass:block_cable_connected_side", "x": 270 }
     },
     {
       "when": { "up": false },
-      "apply": { "model": "yaass:block_cable_side", "x": 90 }
+      "apply": { "model": "yaass:block_cable_side", "x": 270 }
     },
     
     {
       "when": { "down": true },
-      "apply": { "model": "yaass:block_cable_connected_side", "y": 270 }
+      "apply": { "model": "yaass:block_cable_connected_side", "x": 90 }
     },
     {
       "when": { "down": false },
-      "apply": { "model": "yaass:block_cable_side", "y": 270 }
+      "apply": { "model": "yaass:block_cable_side", "x": 90 }
     }
   ]
 }

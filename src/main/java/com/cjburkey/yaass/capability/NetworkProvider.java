@@ -16,6 +16,7 @@ public class NetworkProvider implements ICapabilitySerializable<NBTBase> {
     
     private NetworkBlock.INetworkBlock instance = NETWORK_CAP.getDefaultInstance();
     
+    @SuppressWarnings("ConstantConditions")
     public boolean hasCapability(@Nonnull Capability<?> capability, @Nullable EnumFacing facing) {
         return capability == NETWORK_CAP;
     }

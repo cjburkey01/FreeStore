@@ -17,7 +17,7 @@ public class TileEntityInterface extends TileEntity implements ITickable {
     private final Object2ObjectOpenHashMap<BlockPos, InterfacedInv> neighborInventories = new Object2ObjectOpenHashMap<>();
     private final ObjectOpenHashSet<BlockPos> updated = new ObjectOpenHashSet<>();
     
-    private NetworkProvider np = new NetworkProvider();
+    private final NetworkProvider np = new NetworkProvider();
     
     public void onNeighborUpdate() {
         for (EnumFacing dir : EnumFacing.values()) {
@@ -50,7 +50,7 @@ public class TileEntityInterface extends TileEntity implements ITickable {
         }
     }
     
-    public boolean hasCapability(Capability<?> capability, @Nullable EnumFacing facing) {
+    public boolean hasCapability(@Nonnull Capability<?> capability, @Nullable EnumFacing facing) {
         return np.hasCapability(capability, facing);
     }
     

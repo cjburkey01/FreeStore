@@ -27,7 +27,7 @@ public class BlockCable extends BlockTransparent implements NetworkBlock.INetwor
         
         setCreativeTab(CreativeTabs.REDSTONE);
         setHarvestLevel("pickaxe", 0);
-        setHardness(0.25f);
+        setHardness(0.1f);
         setSoundType(SoundType.METAL);
     }
     
